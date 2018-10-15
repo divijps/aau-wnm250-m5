@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Module 5</title>
+</head>
+<body>
+	<h1 id="head1">First Heading</h1>
+	<h1 id="head2">Second Heading</h1>
+	<h1 id="head3">Third Heading</h1>
+	<h1 id="head4">Fourth Heading</h1>
+
+	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat urna non lectus rutrum gravida. Etiam sit amet tortor congue, pulvinar nulla et, auctor erat. Cras fringilla pharetra nisi, sit amet efficitur nisl pulvinar nec. Quisque vehicula, nisi ac accumsan aliquam, turpis libero dignissim erat, eget semper dui urna a augue. Curabitur interdum pretium bibendum. Sed elementum fermentum varius.</p>
+
+	<p id="p2">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam blandit porta mauris non tincidunt. Fusce mollis efficitur tincidunt. Donec faucibus quis leo nec lobortis. Donec eget erat ut nunc efficitur lobortis. Proin arcu nisl, venenatis et tempus vitae, commodo ullamcorper quam. Praesent non turpis ante. Donec congue nulla in augue pellentesque accumsan.</p>
+
+	<button onclick="changeElement()">Change Font Size</button>
+
+	<script>
+
+
+		document.getElementById("head1").style.color = "black";
+		document.getElementById("head1").style.textAlign = "center";
+
+		document.getElementById("head2").style.color = "red";
+		document.getElementById("head2").style.textAlign = "center";
+
+		document.getElementById("head3").style.color = "blue";
+		document.getElementById("head3").style.textAlign = "center";
+
+		document.getElementById("head4").style.color = "black";
+		document.getElementById("head4").style.textAlign = "center";
+
+		document.getElementById("p1").style.width = "80%";
+		document.getElementById("p1").style.margin = "auto";
+		document.getElementById("p1").style.fontSize = "15px";
+		document.getElementById("p1").style.textAlign = "center";
+
+
+		document.getElementById("p2").style.width = "80%";
+		document.getElementById("p2").style.margin = "auto";
+		document.getElementById("p2").style.fontSize = "15px";
+		document.getElementById("p2").style.textAlign = "center";
+		document.getElementById("p2").style.paddingTop = "10px";
+	
+
+		 function changeElement() {
+                document.getElementById("p1").setAttribute("style", "text-align:center; margin:auto; width:80%; font-size: 30px;");
+                document.getElementById("p2").setAttribute("style", "text-align:center; margin:auto; width:80%; font-size: 30px;");   
+            }
+
+		
+		
+	</script>
+
+</body>
+</html>
